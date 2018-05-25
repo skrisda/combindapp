@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "778229221645",
+    "firebase_url": "https://combindapp-krisda.firebaseio.com",
+    "project_id": "combindapp-krisda",
+    "storage_bucket": "combindapp-krisda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778229221645:android:f325666d60e8a242",
+        "android_client_info": {
+          "package_name": "com.krisda.mycombindapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778229221645-b0eso6it8crm7ubqi8qdr56agkpuqom8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "778229221645-b0eso6it8crm7ubqi8qdr56agkpuqom8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv2io35AUgBJHhFjv9QmGuWQW6bY8hhTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,6 +6,9 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+// Push Notification
+import { FCM } from '@ionic-native/fcm';
+
 // Native device
 import { Device } from '@ionic-native/device';
 
@@ -79,7 +82,8 @@ import { RegisterPage } from '../pages/register/register';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     WebapiServiceProvider,
     Network,    // ถ้าเป็น Native api ใส่ใน provider
-    Device
+    Device,
+    FCM
   ]
 })
 export class AppModule {}
