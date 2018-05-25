@@ -6,6 +6,11 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+// Native device
+import { Device } from '@ionic-native/device';
+
+// Network
+import { Network} from '@ionic-native/network'
 
 // Storage
 import { IonicStorageModule} from '@ionic/storage';
@@ -72,7 +77,9 @@ import { RegisterPage } from '../pages/register/register';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    WebapiServiceProvider
+    WebapiServiceProvider,
+    Network,    // ถ้าเป็น Native api ใส่ใน provider
+    Device
   ]
 })
 export class AppModule {}
