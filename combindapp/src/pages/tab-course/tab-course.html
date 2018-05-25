@@ -1,0 +1,32 @@
+<!--
+  Generated template for the TabCoursePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle="left" left>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>หลักสูตร</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item *ngFor="let cdata of responseData" (click)="courseDetail(cdata.id)">
+      <ion-thumbnail item-start>
+        <img src="http://sc.sci.tsu.ac.th/krisda/ionic_api/images/{{cdata.images}}">
+      </ion-thumbnail>
+      <h2>{{cdata.name}}</h2>
+      <p>{{cdata.description}}</p>
+      <button ion-button clear item-end (click)="courseDetail(cdata.id)">View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

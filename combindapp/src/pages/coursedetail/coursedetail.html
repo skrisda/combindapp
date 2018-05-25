@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>รายละเอียดคอร์ส</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngFor="let cd of cdetail">
+    <img src="http://sc.sci.tsu.ac.th/krisda/ionic_api/images/{{cd.images}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{cd.name}}
+      </ion-card-title>
+      <p>
+        {{cd.description}}
+      </p>
+    </ion-card-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>ราคา {{cd.price}} บาท</ion-col>
+        <ion-col text-right>วันที่ {{cd.create_at|date:'dd/MM/yyyy'}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
