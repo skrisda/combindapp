@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Storage} from '@ionic/storage';
 /**
  * Generated class for the TabServicePage page.
  *
@@ -15,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabServicePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  email : any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage:Storage) {
+    this.storage.get('myemail').then((result) =>{
+      this.email = result;
+    });
   }
 
   ionViewDidLoad() {
